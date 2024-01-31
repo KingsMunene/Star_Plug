@@ -1,3 +1,9 @@
 package com.example.starplug.data
 
-data class Species()
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class Species(
+    val name: String,
+    val language: String
+)
